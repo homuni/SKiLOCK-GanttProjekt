@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Skischloss SKiLOCK" company="PPQM Gruppe 5" webLink="http://" view-date="2020-03-01" view-index="0" gantt-divider-location="572" resource-divider-location="403" version="2.8.11" locale="de_DE">
+<?xml version="1.0" encoding="UTF-8"?><project name="Skischloss SKiLOCK" company="PPQM Gruppe 5" webLink="http://" view-date="2020-03-01" view-index="0" gantt-divider-location="572" resource-divider-location="403" version="2.8.11" locale="de">
     <description/>
     <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Vorgang" width="272" order="0"/>
@@ -335,9 +335,27 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Vorgang_0" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Einkauf" color="#8cb6ce" meeting="false" start="2020-03-02" duration="11" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true">
+            <task id="0" name="Bedarf an Betriebsmittel" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="1" name="Bedarf an Roh-, Hilfs- und Betriebsstoffe" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" name="Bedarf an Büroausstattung" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="Lieferanten suchen" color="#8cb6ce" meeting="false" start="2020-03-03" duration="10" complete="0" thirdDate="2020-03-02" thirdDate-constraint="0" expand="true"/>
+            <task id="10" name="Lieferanten qualifizieren" meeting="false" start="2020-03-02" duration="1" complete="0" expand="true"/>
+            <task id="11" name="Lieferanten nominieren" meeting="false" start="2020-03-02" duration="1" complete="0" expand="true"/>
+            <task id="12" name="Preisfindung" meeting="false" start="2020-03-02" duration="1" complete="0" expand="true"/>
+            <task id="13" name="Bestellen" meeting="false" start="2020-03-02" duration="1" complete="0" expand="true"/>
+            <task id="14" name="Bestellungsüberwachung" meeting="false" start="2020-03-02" duration="1" complete="0" expand="true"/>
+        </task>
     </tasks>
-    <resources/>
+    <resources>
+        <resource id="0" name="" function="Default:0" contacts="" phone=""/>
+    </resources>
     <allocations/>
     <vacations/>
     <previous/>
